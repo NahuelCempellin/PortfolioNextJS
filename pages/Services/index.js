@@ -21,7 +21,7 @@ export default function Services(){
                 {
                 Service.map(el=>{
                     return(
-                        <div className="DescripCont">
+                        <div className="DescripCont" key={el.Back}>
                             <div className="cajitas">
                             <div className="boxcont">
                             <BiCodeAlt className="icon"/>

@@ -21,7 +21,7 @@ const data= aboutMe;
                 {
                     data.map(el=> {
                         return(
-                            <div>
+                            <div key={el.age}>
                                 <div className="hcont">
                                 <h1>About Me</h1>
 

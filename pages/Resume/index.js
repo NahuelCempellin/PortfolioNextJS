@@ -23,12 +23,12 @@ export default function Resume(){
                     {
                         study.map(el=> {
                             return(
-                                <div className="contText">
+                                <div className="contText" key={el.TAexp}>
                                     <h2>Studies {' '} <BsBook/></h2>
 
 
 
-                                <div className="primero">
+                                <div className="primero" key={el.another}>
                                     <div className="boot">
                                     <h3>{ el.bootcamp + ' ' + 'Bootcamp'}</h3>
                                     <p className="date">{el.desde + '-'+ el.hasta}</p>
@@ -51,7 +51,7 @@ export default function Resume(){
                                     <ul>
                                         {
                                             el.projects.map(e=>(
-                                                <li>{e}</li>
+                                                <li key={e}>{e}</li>
                                             ))
                                         }
                                     </ul>
@@ -61,7 +61,7 @@ export default function Resume(){
                                     <div className="contUl">
                                     <ul>
                                         {
-                                            el.tech.map(e=> (<li>{e}</li>))
+                                            el.tech.map(e=> (<li key={e}>{e}</li>))
                                         }
                                     </ul>
                                     </div>
@@ -69,7 +69,7 @@ export default function Resume(){
                                 
                                     <div className="contUl">
                                     <ul>{
-                                        el.other.map(e=>(<li>{e}</li>))
+                                        el.other.map(e=>(<li key={e}>{e}</li>))
                                         }</ul>
                                     </div>
                                     
@@ -85,7 +85,7 @@ export default function Resume(){
                         {
                             work.map(el=>{
                                 return(
-                                    <div>
+                                    <div key={el.date}>
                                         <div className="contWork">
                                         <h2>Work Experience<FiSettings/></h2>
                                         <p className="dateW">{el.date}</p>
@@ -94,7 +94,7 @@ export default function Resume(){
 
                                         <div className="techUsed">
                                         <h3>Used technology</h3>
-                                       <ul>{el.technologies.map(e=> (<li>{e}</li>))}</ul>
+                                       <ul>{el.technologies.map(e=> (<li key={e} >{e}</li>))}</ul>
                                         </div>
 
                                     </div>
