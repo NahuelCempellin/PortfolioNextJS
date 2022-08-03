@@ -13,7 +13,7 @@ export default function Landing(){
             <div className="ballsmall"></div>
             <div className="text">
                 <div className="hi">
-                    <p>Hi! i'm</p>
+                    <p>Hi! im</p>
                 </div>
                 <div className="name">
                 <h1 className="uno">Nahuel</h1>

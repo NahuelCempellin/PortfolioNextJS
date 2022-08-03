@@ -14,17 +14,17 @@ export default function Nav2(){
 return(
     <div className='cont2'>
         <div className="buttonred">
-            <a target='_blank' href='https://github.com/NahuelCempellin' className='shadowgh'>
+            <a target='_blank' rel="noreferrer" href='https://github.com/NahuelCempellin' className='shadowgh'>
             <AiFillGithub/>
             </a>
         </div>
         <div className="buttonred">
-            <a target='_blank' href='https://www.linkedin.com/in/nahuel-felipe-cempellin' className='shadowln'>
+            <a target='_blank' rel="noreferrer" href='https://www.linkedin.com/in/nahuel-felipe-cempellin' className='shadowln'>
             <BsLinkedin />
             </a>
         </div>
         <div className="buttonred">
-            <a target='_blank' href='' className='shadowtw'>
+            <a  className='shadowtw'>
             <BsTwitter />
             </a>
         </div>
