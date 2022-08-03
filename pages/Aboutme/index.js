@@ -16,7 +16,7 @@ const data= aboutMe;
 
             <div className="cont">
             <div className="imgCont">
-                <Image src={photo}/>
+                <Image src={photo} alt='nahuel'/>
             </div>
                 {
                     data.map(el=> {
@@ -42,7 +42,7 @@ const data= aboutMe;
 
                                 <div className="buttoncont">
 
-                                   <a target='_blank' href='https://docs.google.com/document/d/125E4k3bjxfxgpn2gYmsc6R8hLjHVnQcB/edit?usp=sharing&ouid=109841190894507955967&rtpof=true&sd=true'>
+                                   <a target='_blank' rel="noreferrer"  href='https://docs.google.com/document/d/125E4k3bjxfxgpn2gYmsc6R8hLjHVnQcB/edit?usp=sharing&ouid=109841190894507955967&rtpof=true&sd=true'>
                                     <button>Download CV <BsFillCloudDownloadFill className="nube"/> </button>
                                     </a>
                                     
